@@ -152,7 +152,7 @@ p{
 #lollalogo{
     width:20%
 }
-div{
+.maindiv{
     grid-template-columns: 1fr 1fr;
 }
 p{
