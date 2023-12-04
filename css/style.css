@@ -1,0 +1,173 @@
+body{
+    background: #e17a7a;
+    background-size: 400% 400%;
+    animation: gradient 10s infinite;
+    color:rgb(65, 35, 35);
+    
+}
+
+nav li{
+    display:block;
+
+}
+figure{
+    margin:10px;
+}
+img, video{
+    border-radius: 20px;;
+}
+nav{
+ 
+    font-family: "lora",serif;
+    font-weight: lighter;
+    font-size: 1.7em;
+    background: #e17a7a;
+    
+    animation: gradient2 10s infinite;
+    top:0;  
+   
+   
+    height:fit-content;
+    
+    position:sticky;
+}
+
+.submenu {
+    display: none;
+    padding-left: 20px;
+    background-color: white;
+  }
+p{
+    font-family: "lora",serif;
+    font-weight: lighter;
+    margin:10px;
+}
+#maintitle{
+    font-size:3.5em;
+}
+h1{
+    padding:10px;
+    font-family:"lora",serif;
+    font-size: 2.5em;
+    
+}
+h2{
+    padding:10px;
+    font-family:"lora",serif;
+    font-size: 1.5em;
+    
+}
+img, video{
+    width:90%;
+    margin:auto;
+}
+div{
+    display:grid;
+    grid-template-columns: 1fr;;
+    gap: 1em;
+    
+}
+#skip{
+    z-index:100;    
+    position:absolute;
+    left: -400px;
+    background-color: white;
+}
+#skip:focus{
+    position:absolute;
+    left: 0px;
+}
+
+@keyframes gradient{
+    0%{
+        background: #a0a6e8;
+    }
+    50%{
+        background:#ec9494;
+    }
+    100%{
+        background: #9a9fe0;
+    }
+}
+@keyframes gradient2{
+    0%{
+        background: #ec9494;
+    }
+    50%{
+        background:#a0a6e8;
+    }
+    100%{
+        background: #ec9494;
+    }
+}
+@media screen and (min-width: 780px){
+#Lolla{
+    grid-template-columns: 1fr 1fr;
+    
+}
+h1{
+    font-size:4em;
+}
+h2{
+    font-size:2.5em;
+}
+figcaption{
+    font-size:1.5em;
+    font-family:"lora",serif;
+}
+#Lolla h2{
+    align-self: center;
+}
+p{
+    font-size:1.5em;
+}
+#maintitle{
+    font-size:6em;
+}
+
+}
+@media screen and (min-width: 1000px){
+nav{
+    font-size: 2em;
+    height:fit-content;
+
+}
+h1{
+    font-size: 6em;
+}
+h2{
+    font-size: 4em;
+    grid-column:1/-1;
+}
+#maintitle{
+    font-size: 8em;
+}
+p{
+    font-size:2em;
+}
+#Lolla:p{
+    grid-column: 1/2;;
+}
+#lollalogo{
+    width:20%
+}
+div{
+    grid-template-columns: 1fr 1fr;
+}
+p{
+    grid-column:1/2;
+}
+.thumbnail{
+    width:40%;
+}
+.pic{
+    grid-column:2/3;
+    grid-row:3/5;
+}
+#aftershow{
+    grid-row: 2/4;;
+}
+img, video{
+    width:60%;
+}
+}
